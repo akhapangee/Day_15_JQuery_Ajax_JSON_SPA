@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>jQuery, Ajax, JSON and SPA Application</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="assets/js/jquery.min.js"></script>
+    </head>
+    <body>
+        <h1></h1>
+        <h1></h1>
+        <h1></h1>
+        <h1></h1>
+        <h1></h1>
+        <h1></h1>
+        <script>
+
+            /* Displaying callback function
+             function add(x, y) {
+             
+             return x + y;
+             }
+             
+             function sub(x, y) {
+             return x - y;
+             }
+             
+             function calculate(x, y, callback) {
+             
+             return callback(x, y);
+             }
+             var total = calculate(2, 3, function (x, y) {
+             return x * y;
+             });
+             
+             document.write("<h1>"+total+"</h1>");
+             */
+
+
+            /* Using SingleTon Pattern. This is old style. We no more use this
+             function Student() {
+             this.id = 0;
+             this.firstName = "";
+             this.lastName = "";
+             }
+             
+             var student = new Student();
+             student.id = "1";
+             student.firstName = "Akhilesh";
+             student.lastName = "Khapangee";
+             console.log(student);
+             */
+            var students = [];
+            window.onload = function () {
+                var student = new Student();
+                student.id = "1";
+                student.firstName = "Akhilesh";
+                student.lastName = "Khapangee";
+                console.log(student);
+            }
+
+        </script>
+        <script src="assets/js/models/student.js" type="text/javascript"></script>
+    </body>
+</html>
